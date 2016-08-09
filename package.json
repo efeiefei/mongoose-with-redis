@@ -1,5 +1,5 @@
 {
-  "name": "mongooseRedis",
+  "name": "mongoose-with-redis",
   "version": "0.1.0",
   "description": "Cache your Mongoose MongoDB query results with Redis",
   "main": "index.js",
