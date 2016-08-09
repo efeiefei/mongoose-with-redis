@@ -2,13 +2,13 @@ This project borrowed from [mongoose-redis-cache](https://github.com/conancat/mo
 The difference is that this project using javascript alternative coffeescript, support custom redis client, and change some internal logics and using methods.
 
 ## Installation
-`npm install mongooseRedis`
+`npm install mongoose-with-redis
 
 ## Example Usage
 ```Javascript
 var mongoose = require('mongoose');
 var redis = require('ioredis');
-var MongooseRedis = require('mongooseRedis');
+var MongooseRedis = require('mongoose-with-redis');
 // custom schema and model as usual
 var userSchama = new mongoose.Schema({
   name: String,

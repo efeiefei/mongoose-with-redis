@@ -1,6 +1,6 @@
 {
   "name": "mongoose-with-redis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cache your Mongoose MongoDB query results with Redis",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/efeiefei/mongooseRedis.git"
+    "url": "git+https://github.com/efeiefei/mongoose-with-redis.git"
   },
   "keywords": [
     "MongoDB",
@@ -25,9 +25,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/efeiefei/mongooseRedis/issues"
+    "url": "https://github.com/efeiefei/mongoose-with-redis/issues"
   },
-  "homepage": "https://github.com/efeiefei/mongooseRedis#readme",
+  "homepage": "https://github.com/efeiefei/mongoose-with-redis#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "co-mocha": "^1.1.3",
