@@ -9,22 +9,23 @@ The difference is that this project using javascript alternative coffeescript, s
 var mongoose = require('mongoose');
 var redis = require('ioredis');
 var MongooseRedis = require('mongooseRedis');
+// custom schema and model as usual
+var userSchama = new mongoose.Schema({
+  name: String,
+  age: Number,
+});
+User = mongoose.model('User', userSchama);
 
 var redisClient = redis.createClient();
 mongoose.connect('mongodb://localhost/mongoose-redis-test');
 
-// the follwing is default config
+// The follwing is default config if you pass no cacheOptions.
 var cacheOptions = {
   cache: true,
   expires: 60,
   prefix: 'RedisCache'
 };
 MongooseRedis(mongoose, redisClient, cacheOptions);
-var userSchama = new mongoose.Schema({
-  name: String,
-  age: Number,
-});
-User = mongoose.model('User', userSchama);
 
 // Works with lean() and exec(), the same query will use redis cache next time.
 var user = yield User.findOne({name: 'xxx'}).lean().exec();
@@ -36,4 +37,3 @@ var user = yield User.findOne({name: 'xxx'})
     .setOptions({cacheOptions: {cache: false}})
     .lean().exec();
 ```
-
