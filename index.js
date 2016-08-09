@@ -43,8 +43,6 @@ var mongooseRedis = function(mongoose, redisClient, options) {
     var collectionName = model.collection.name;
 
 
-    // console.log(this._mongooseOptions);
-
     // use cache options set up by query statements first
     // also diffrent from mongoose-redis-cache,
     // as setOptions() set options in this._optionsForExec(model)

@@ -1,0 +1,39 @@
+{
+  "name": "mongooseRedis",
+  "version": "0.1.0",
+  "description": "Cache your Mongoose MongoDB query results with Redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony test/test_*.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "lodash": "^4.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efeiefei/mongooseRedis.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Redis",
+    "Mongoose"
+  ],
+  "author": {
+    "name": "efei",
+    "email": "efeigm@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/efeiefei/mongooseRedis/issues"
+  },
+  "homepage": "https://github.com/efeiefei/mongooseRedis#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "co-mocha": "^1.1.3",
+    "co-sleep": "0.0.1",
+    "ioredis": "^2.2.0",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.0"
+  }
+}
